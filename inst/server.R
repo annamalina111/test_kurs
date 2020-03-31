@@ -1,3 +1,8 @@
+# Define server logic required to draw a histogram
+
+shinyServer(function(input, output, session) {})
+
+
 server <- function(input, output) {
   
   
@@ -32,7 +37,7 @@ server <- function(input, output) {
   output$kernelPlot <- renderPlot({
     
     set.seed(10)
-    Y <- rnorm(500, mean = 10, sd = 2)
+    Y <- rnorm(input$n, mean = 10, sd = 2)
     hist(Y, prob = TRUE, col = "gray", lwd = 2.5)
     curve(dnorm(x , mean = 10, sd = 2), from = 2, to = 20, type = "l", col = rgb(0.5, 0.0, 0.5), lwd = 2, add = TRUE)
     lines(density(Y, bw = input$bw, kernel = input$kernel), lwd = 2)
@@ -42,10 +47,10 @@ server <- function(input, output) {
   output$kernelPlot2 <- renderPlot({
     
     set.seed(10)
-    Y <- rnorm(500, mean = 10, sd = 2)
+    Y <- rnorm(input$n2, mean = 10, sd = 2)
     hist(Y, prob = TRUE, col = "gray", lwd = 2.5)
     curve(dnorm(x , mean = 10, sd = 2), from = 2, to = 20, type = "l", col = rgb(0.5, 0.0, 0.5), lwd = 2, add = TRUE)
-    lines(density(Y, bw = input$c * 500^(-1/5), kernel = input$kernel2), lwd = 2)
+    lines(density(Y, bw = input$c * input$n2^(-1/5), kernel = input$kernel2), lwd = 2)
     
   })
   
@@ -68,5 +73,6 @@ server <- function(input, output) {
     
     
 }
+
 
 server
