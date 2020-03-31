@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1585253067719.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "2D4B0C40",
+    "lastKnownWriteTime" : 1585659542,
+    "last_content_update" : 1585659542126,
+    "path" : "C:/Users/potto/Dropbox/USB_OTTO/2 - Lehre/Data Science II - Statistics/Vorlesung 0/Vorlesung_0/V0.R",
+    "project_path" : "V0.R",
+    "properties" : {
+        "cursorPosition" : "7,31",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
