@@ -1,6 +1,15 @@
 welcome <- mainPanel(h3("Willkommen"),
                      p("Herzlich Willkommen zum Kurs Data Science II"), 
-                     tags$video(id="videoID", type = "video/mp4", src = "welcome.mp4", width = "800px", height = "400px", controls = "controls"))
+                     HTML("<video src='welcome.mp4' width='800px' height='400px' controls controlsList='nodownload'
+                            preload='metadata' playsinline poster = 'chess_128.png'>
+                            <p>Your browser does not support the HTML5 video element. Please, try to update your browser or use a different one.</p>
+                            </video>"),
+                     p("zweite Variante"),
+                     HTML("<iframe id='videoID' type = 'video/mp4' src='welcome.mp4' width='800px' height='400px' 
+                             controlsList='nodownload'  preload='metadata' playsinline
+                           type = 'video/mp4' controls = 'controls' frameborder='0 
+                          allow='picture-in-picture; fullscreen'></iframe>"))
+# tags$video(id="videoID", type = "video/mp4", src = "welcome.mp4", width = "800px", height = "400px", controls = "controls"))
 
 
 semester_beginn <- "20.04.2020"
