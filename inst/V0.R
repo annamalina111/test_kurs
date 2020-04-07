@@ -1,19 +1,6 @@
 welcome <- mainPanel(h3("Willkommen"),
                      p("Herzlich Willkommen zum Kurs Data Science II"),
-                     HTML("<iframe width='560' height='315' src='https://www.youtube.com/embed/M5azNpTwVk8' frameborder='0' 
-                          allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"),
-                     HTML("<video src='https://github.com/philot789/data_science_2/raw/master/inst/www/welcome.mp4' 
-width='800px' height='400px' controls='true' controlsList='nodownload' playsinline
-                            preload='yes' autoplay poster = 'chess_128.png'>
-                            <p>nYour browser does not support the HTML5 video element. Please, try to update your browser or use a different one.</p>
-                            </video>"),
-                     p("zweite Variante"),
-                     HTML("<iframe id='videoID' type = 'video/mp4' src='welcome.mp4' width='800px' height='400px' 
-                             controlsList='nodownload'  preload='metadata' playsinline
-                           type = 'video/mp4' controls = 'controls' frameborder='0 
-                          allow='picture-in-picture; fullscreen'></iframe>"),
-                     p("nächste Variante:"),
-tags$video(id="videoID", type = "video/mp4", src = "welcome.mp4", width = "800px", height = "400px", controls = "controls"))
+                     embed_video_w_download("welcome.mp4"))
 
 
 semester_beginn <- "20.04.2020"

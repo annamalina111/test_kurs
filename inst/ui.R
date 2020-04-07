@@ -1,19 +1,16 @@
-# ui <- navbarPage("Data Science II - Statistics",
-#            tabPanel("Component 1"),
-#            tabPanel("Component 2"),
-#            navbarMenu("More",
-#                       tabPanel("Sub-Component A"),
-#                       tabPanel("Sub-Component B"))
-# )
 
-# http://mybinder.org/v2/gh/philot789/data_science_2/master?urlpath=shiny/inst/lecture0/
+# http://mybinder.org/v2/gh/philot789/data_science_2/master?urlpath=shiny/inst/
+
+source("Functions.R", encoding = "utf8")
 
 source("V0.R", encoding = "utf8")
 
 source("V1.R", encoding = "utf8")
 
 
+# <iframe width="560" height="315" src="https://www.youtube.com/embed/M5azNpTwVk8" frameborder="0" 
 
+# allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # # Define UI for application that draws a histogram
 ui <- fluidPage(
